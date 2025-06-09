@@ -33,4 +33,8 @@ int main() {
     //Membuat objek intput file stream
     ifstream infile;
 
-   
+    // membuka file yang dituliskan
+    infile.open("contohfile.txt");
+
+    cout << endl << ">= Membuka dan membaca file " << end;
+
