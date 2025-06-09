@@ -5,12 +5,17 @@ using namespace std;
 
 int main() {
     string baris;
+    string nameFile;
+
+    cout << "Masukan Name File : ";
+    cin >> nameFile;
+    cin.ignore();
 
     // membuat objek output file stream
     ofstream outfile;
 
   // membuka file untuk ditulisi
-    outfile.open("contohfile.txt");
+    outfile.open("nameFile.txt");
 
     cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
@@ -34,7 +39,7 @@ int main() {
     ifstream infile;
 
     // membuka file yang dituliskan
-    infile.open("contohfile.txt");
+    infile.open(nameFile + ".txt");
 
     cout << endl << ">= Membuka dan membaca file " << endl;
 
